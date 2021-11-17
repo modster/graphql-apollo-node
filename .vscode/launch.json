@@ -4,7 +4,7 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "name": "nodemon",
-            "program": "${workspaceFolder}/src/index.js",
+            "program": "/src/index.js",
             "request": "launch",
             "restart": true,
             "runtimeExecutable": "nodemon",
@@ -14,6 +14,8 @@
             "type": "node"
         }
     ]
+}
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // ${workspaceFolder}

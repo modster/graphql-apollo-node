@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "node src/index.js",
-    "query": "node src/script.js"
+    "server": "node src/index.js",
+    "prisma": "npx prisma studio",
+    "migrate-db": "npx prisma migrate dev --name 'descriptive--name'",
+    "regen-db-client": "npx prisma generate"
   },
-  "keywords": [ "nodejs", "apollo", "graphql", "REST", "API" ],
+  "keywords": [
+    "nodejs",
+    "apollo",
+    "graphql",
+    "api"
+  ],
   "author": "Mike Greeff",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^3.5.0",
     "apollo-server": "^2.25.3",
-    "graphql": "^15.7.2"
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.7.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.15"
   },
   "devDependencies": {
     "prisma": "^3.5.0"
