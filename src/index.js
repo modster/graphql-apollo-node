@@ -1,4 +1,8 @@
 const { ApolloServer } = require('apollo-server');
+const { readFileSync } = require('fs');
+const { getUserId } = require('./utils');
+
+const path = require('path');
 
 let links = [{
     id: 'link-0',
@@ -29,11 +33,10 @@ const resolvers = {
     },
 }
 
-const fs = require('fs');
-const path = require('path');
+
 
 const server = new ApolloServer({
-    typeDefs: fs.readFileSync(
+    typeDefs: readFileSync(
         path.join(__dirname, 'schema.graphql'),
         'utf8'
     ),
