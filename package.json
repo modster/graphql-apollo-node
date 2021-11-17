@@ -1,0 +1,21 @@
+{
+  "name": "hackernews-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node src/index.js",
+    "query": "node src/script.js"
+  },
+  "keywords": [ "nodejs", "apollo", "graphql", "REST", "API" ],
+  "author": "Mike Greeff",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.5.0",
+    "apollo-server": "^2.25.3",
+    "graphql": "^15.7.2"
+  },
+  "devDependencies": {
+    "prisma": "^3.5.0"
+  }
+}
